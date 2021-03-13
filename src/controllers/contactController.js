@@ -19,7 +19,7 @@ const sendContactMessage = (req, res) => {
 			});
 		}
 
-		return res.json({
+		return res.status(200).json({
 			message: 'email has been send, thank you for your message',
 		});
 	});
